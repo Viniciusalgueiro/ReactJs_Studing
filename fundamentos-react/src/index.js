@@ -1,15 +1,11 @@
 import ReactDOM from  'react-dom'
 import React from 'react'
 import './index.css'
-import Primeiro from './components/basics/Primeiro'
-import ComParametro from './components/basics/ComParametro'
+import App from './app'
+
 
 ReactDOM.render(
-    <div id='app'>
-        <Primeiro></Primeiro>
-        <ComParametro titulo="Segundo Componente"
-        aluno="vinicius Aquino"
-        nota='5.3'/>
-    </div>,
+    <App />,
+
     document.getElementById('root')
 )
