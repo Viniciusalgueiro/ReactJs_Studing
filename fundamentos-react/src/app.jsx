@@ -11,16 +11,23 @@ import Card from './components/layout/card'
 export default () => (
     <div id='app'>
         <h1>Fundamentos React </h1>
-        <Card titulo="Exemplo de card">
-            
+        <Card titulo="#04 - Desafio Aleatorio">
+            <Aleatorio min={1} max={60}/>
         </Card>
-        <Aleatorio min={1} max={60} />
+        <Card titulo="#03 - Fragmentos">
         <Fraguimentos />
+        </Card>
+        <Card titulo="#02 - ComParametro">
         <ComParametro
             titulo="Segundo Componente"
             aluno="vinicius Aquino"
             nota='5.3' />
+        </Card>
+        <Card titulo="#01 - Primeiro">
         <Primeiro />
+        </Card>
+        
+        
     </div>
 )
 
