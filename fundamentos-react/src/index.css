@@ -3,12 +3,11 @@ body {
     color: aliceblue;
     font-family: Oswald;
     text-align: center;
-    font-size: 1.4 rem;
+    font-size: 1.4rem;
 }
 
 h1, h2 , h3 {
     font-weight: 200;
-    margin: 0;
 } 
 h2 , h3 {
     margin: 0;
