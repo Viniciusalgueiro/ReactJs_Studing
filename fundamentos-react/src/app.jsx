@@ -11,6 +11,7 @@ import FamiliaMembro from './components/basics/FamiliaMembro'
 import './App.css'
 import ListaProduto from './components/Repeticao/ListaProduto'
 import ParouImpar from './components/Condicional/ParouImpar'
+import UsuarioInfo from './components/Condicional/usuarioInfo'
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -20,6 +21,8 @@ export default () => (
         <div className="Cards">
             <Card titulo="#09 - Renderização Condicional " color='#FFAC00' >
                 <ParouImpar numero={20} ></ParouImpar>
+                <UsuarioInfo usuario={{ nome: "Fernando" }} />
+                <UsuarioInfo usuario={{ }} />
             </Card>
             <Card titulo="#07 - Lista de Produtos" color='#29ABA4'>
                 <ListaProduto />
