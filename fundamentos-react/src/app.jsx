@@ -9,15 +9,23 @@ import Familia from './components/basics/familia'
 import ListaAlunos from './components/Repeticao/ListaAlunos'
 import FamiliaMembro from './components/basics/FamiliaMembro'
 import './App.css'
+import ListaProduto from './components/Repeticao/ListaProduto'
+import ParouImpar from './components/Condicional/ParouImpar'
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => (
     <div className='App'>
-        <h1>Fundamentos React </h1>        
+        <h1>Fundamentos React </h1>
         <div className="Cards">
-        <Card titulo="#06 - Lista Alunos" color='#53BBF4 '>
-                <ListaAlunos/>
+            <Card titulo="#09 - Renderização Condicional " color='#FFAC00' >
+                <ParouImpar numero={20} ></ParouImpar>
+            </Card>
+            <Card titulo="#07 - Lista de Produtos" color='#29ABA4'>
+                <ListaProduto />
+            </Card>
+            <Card titulo="#06 - Lista Alunos" color='#53BBF4 '>
+                <ListaAlunos />
             </Card>
             <Card titulo="#05 - Componente com Filhos" color='#F0A830'>
                 <Familia sobrenome='Silva'>
