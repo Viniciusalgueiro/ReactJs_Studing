@@ -12,6 +12,7 @@ import './App.css'
 import ListaProduto from './components/Repeticao/ListaProduto'
 import ParouImpar from './components/Condicional/ParouImpar'
 import UsuarioInfo from './components/Condicional/usuarioInfo'
+import DiretaPai from './components/Comunicação/DiretaPai'
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -19,7 +20,10 @@ export default () => (
     <div className='App'>
         <h1>Fundamentos React </h1>
         <div className="Cards">
-            <Card titulo="#09 - Renderização Condicional " color='#FFAC00' >
+        <Card titulo="#09 - Lista de Produtos" color='#E9514C'>
+                <DiretaPai/>
+            </Card>
+            <Card titulo="#10 - Renderização Condicional " color='#FFAC00' >
                 <ParouImpar numero={20} ></ParouImpar>
                 <UsuarioInfo usuario={{ nome: "Fernando" }} />
                 <UsuarioInfo usuario={{ }} />
