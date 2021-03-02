@@ -1,16 +1,26 @@
 /* eslint-disable import/no-anonymous-default-export */
-import React from "react";
-import IndiretaFilho from "./IndiretaFilho";
+import React, { useState } from 'react'
+import IndiretaFilho from './IndiretaFilho'
 
 export default props => {
-
-    function fornercerInfo(nome, idade, nerd) {
-        console.log(nome, idade, nerd)
+    const [nome, setNome] = useState('?')
+    const [idade, setIdade] = useState(0)
+    const [nerd, setNerd] = useState(false)
+    
+    function fornecerInfomacoes(nome, idade, nerd) {
+        setNome(nome)
+        setIdade(idade)
+        setNerd(nerd)
     }
-  return (
-    <div>
-      <div>Pai</div>
-      <IndiretaFilho quandoclicar={fornercerInfo}>  </IndiretaFilho>
-    </div>
-  );
-};
+
+    return (
+        <div>
+            <div>
+                <span>{nome} </span>
+                <span><strong>{idade}</strong></span>
+                <span> {nerd ? 'Verdadeiro' : 'Falso'}</span>
+            </div>
+            <IndiretaFilho quandoClicar={fornecerInfomacoes} ></IndiretaFilho>
+        </div>
+    )
+}
