@@ -16,12 +16,16 @@ import DiretaPai from "./components/Comunicação/DiretaPai";
 import IndiretaPai from "./components/Comunicação/IndiretaPai";
 import Input from "./components/formulario/input";
 import Contador from "./components/contador/contador";
+import Mega from "./components/Mega/Mega";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => (
   <div className="App">
     <h1>Fundamentos React </h1>
     <div className="Cards">
+    <Card titulo="#13 - Mega sena " color="#FFAC30">
+        <Mega></Mega>
+      </Card>
       <Card titulo="#12 - Contador " color="#82AA30">
         <Contador numeroInicial={10}></Contador>
       </Card>
