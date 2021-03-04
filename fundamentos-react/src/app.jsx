@@ -28,7 +28,7 @@ export default () => (
       <Card titulo="#11 - Componente Controlado (Input)" color="#C91B26">
         <Input></Input>
       </Card>
-      <Card titulo="#10 - Comunicação Indireta" color="#5BB12F">
+      <Card titulo="#10 - Comunicação Indireta" color="#4BB12F">
         <IndiretaPai />
       </Card>
       <Card titulo="#09 - Comunicação Direta" color="#E9514C">
