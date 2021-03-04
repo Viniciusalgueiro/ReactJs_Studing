@@ -15,12 +15,16 @@ import UsuarioInfo from "./components/Condicional/usuarioInfo";
 import DiretaPai from "./components/Comunicação/DiretaPai";
 import IndiretaPai from "./components/Comunicação/IndiretaPai";
 import Input from "./components/formulario/input";
+import Contador from "./components/contador/contador";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => (
   <div className="App">
     <h1>Fundamentos React </h1>
     <div className="Cards">
+      <Card titulo="#12 - Contador " color="#82AA30">
+        <Contador numeroInicial={10}></Contador>
+      </Card>
       <Card titulo="#11 - Componente Controlado (Input)" color="#C91B26">
         <Input></Input>
       </Card>
