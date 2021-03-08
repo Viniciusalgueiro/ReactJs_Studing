@@ -7,7 +7,7 @@ const TailwindPage: React.FC = () => {
       <motion.img
         src="/img/tailwind.svg"
         layoutId="tailwind-logo"
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.6 }}
       />
 
       <motion.div
